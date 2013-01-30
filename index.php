@@ -18,7 +18,7 @@ define('WORDPRESS_AIRBRAKE_VERSION', '0.5.0');
  *********************/
 
 function install_php_airbrake() {
-   require_once './php-airbrake/src/Airbrake/EventHandler.php';
+   require_once( dirname( __FILE__ ) . '/php-airbrake/src/Airbrake/EventHandler.php');
    $api_key = get_option('wordpress_airbrake_api_key');
    $event_handler = Airbrake\EventHandler::start($api_key);
 }
