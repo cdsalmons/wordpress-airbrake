@@ -19,5 +19,5 @@ Provide the Airbrake API Key, and Enable the plugin.
 Notes
 =====
 
-- This has been tested and working using Wordpress 3.4, running on the Heroku Cedar stack.
+- This has been tested and works using Wordpress 3.4, running on the Heroku Cedar stack, with PHP 5.3.10.
 - [PHP-Airbrake](http://github.com/nodrew/php-airbrake) supports using [PHP-Resque](https://github.com/chrisboulton/php-resque) to send exceptions via Resque, but this is not (yet) supported in the Wordpress plugin. If you need support for Resque, I'm happy to look over pull requests.
