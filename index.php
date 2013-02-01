@@ -89,8 +89,14 @@ function wordpress_airbrake_options() {
 </form>
 </div>
 <?php
+  if (get_option('wordpress_airbrake_enabled')) {
+?>
+<div class="wrap">
+<a href="<?php echo plugins_url( "/wordpress-airbrake/test.php" ); ?>">Simulate an Exception</a>
+</div>
+<?php
+  }
 }
-
 
 /*******************************
  * Wordpress Actions and Hooks *
